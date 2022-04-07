@@ -1,5 +1,6 @@
 import {ReactComponent as Logo} from 'assets/logo.svg';
 import { useState } from 'react';
+import OpcoesOrdenador from 'types/OpcoesOrdenador';
 import Buscador from './Buscador';
 import styles from './Cardapio.module.scss';
 import Filtros from './Filtros';
@@ -9,7 +10,7 @@ import Ordenador from './Ordenador';
 export default function Cardapio(){
     const [busca, setBusca] = useState('');
     const [filtro, setFiltro] = useState<number | null>(null);
-    const [ordenador, setOrdenador] =useState('');
+    const [ordenador, setOrdenador] =useState<OpcoesOrdenador>('');
     return(
         <main>
             <nav className={styles.menu}>

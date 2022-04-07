@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import OpcoesOrdenador from 'types/OpcoesOrdenador';
 import Item from './Item';
 import cardapio from './itens.json';
 import styles from './Itens.module.scss';
@@ -6,7 +7,7 @@ import styles from './Itens.module.scss';
 interface Props{
     busca: string;
     filtro: number | null;
-    ordenador: string;
+    ordenador: OpcoesOrdenador;
 }
 
 export default function Itens (props: Props){
