@@ -13,8 +13,7 @@ export default function AppRouter() {
           <Route path='/' element={<PaginaPadrao/>}>
             <Route index element={<Inicio/>}/>
             <Route path='cardapio' element={<Cardapio/>}/>
-          </Route>
-          
+          </Route>       
         </Routes>
       </Router>
     </main>

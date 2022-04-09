@@ -1,4 +1,3 @@
-import Menu from 'components/Menu';
 import { useState } from 'react';
 import OpcoesOrdenador from 'types/OpcoesOrdenador';
 import Buscador from './Buscador';
@@ -6,6 +5,7 @@ import styles from './Cardapio.module.scss';
 import Filtros from './Filtros';
 import Itens from './Itens';
 import Ordenador from './Ordenador';
+import stylesTema from 'styles/Tema.module.scss';
 
 export default function Cardapio(){
   const [busca, setBusca] = useState('');
@@ -13,7 +13,7 @@ export default function Cardapio(){
   const [ordenador, setOrdenador] =useState<OpcoesOrdenador>('');
   return(
     <section className={styles.cardapio}>
-      <h3 className={styles.cardapio__titulo}>Cardápio</h3>
+      <h3 className={stylesTema.titulo}>Cardápio</h3>
       <Buscador
         busca={busca}
         setBusca={setBusca}
