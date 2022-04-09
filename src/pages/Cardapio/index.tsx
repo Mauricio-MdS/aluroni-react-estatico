@@ -1,4 +1,4 @@
-import {ReactComponent as Logo} from 'assets/logo.svg';
+import Menu from 'components/Menu';
 import { useState } from 'react';
 import OpcoesOrdenador from 'types/OpcoesOrdenador';
 import Buscador from './Buscador';
@@ -13,9 +13,6 @@ export default function Cardapio(){
   const [ordenador, setOrdenador] =useState<OpcoesOrdenador>('');
   return(
     <main>
-      <nav className={styles.menu}>
-        <Logo/>
-      </nav>
       <header className={styles.header}>
         <div className={styles.header__text}>
                     A casa do código e da massa.
